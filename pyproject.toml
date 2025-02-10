@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools >= 61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastset"
+version = "0.9"
+requires-python = ">= 3.6"
+# With the current setuptools, there doesn't seem to be a way to specify the license in this file.
+# All I get is error messages... so I'm declaring it dyamic and define it in setup.py
+# license = "GPL-2.0-or-later"
+dynamic = ["license"]
+authors = [
+	{name = "Olaf Kirch", email = "okir@suse.com"},
+]
