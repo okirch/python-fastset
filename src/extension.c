@@ -99,7 +99,7 @@ static struct PyModuleDef fastset_module_def = {
 
 
 PyMODINIT_FUNC
-PyInit_fastsets(void)
+PyInit_fastset(void)
 {
 	PyObject* m;
 

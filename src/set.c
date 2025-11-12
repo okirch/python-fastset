@@ -351,7 +351,7 @@ Fastset_remove(fastset_Set *self, PyObject *args, PyObject *kwds)
 		return NULL;
 
 	if (member->index < 0 || !fastset_bitvec_clear(self->bitvec, member->index)) {
-		_PyErr_SetKeyError((PyObject *) member);
+		PyErr_SetObject(PyExc_KeyError, (PyObject *) member);
 		return NULL;
 	}
 

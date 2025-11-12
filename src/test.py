@@ -1,4 +1,4 @@
-import fastsets
+import fastset
 import string
 import random
 import time
@@ -8,7 +8,7 @@ if False:
 else:
 	def debug(*args, **kwargs): pass
 
-LabelDomain = fastsets.Domain("labels")
+LabelDomain = fastset.Domain("labels")
 
 class Label(LabelDomain.member):
 	def __init__(self, name):
